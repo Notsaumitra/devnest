@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+#inlineContTest {
+  background-color: blue;
+}
+#inlineContTest > p {
+  display: inline;
+  background-color: aqua;
+  margin: 20px; /*only left and right margins can be given top and bottom will got get effected*/
+}
+
+#inlineBlockContTest {
+  background-color: blueviolet;
+}
+
+#inlineBlockContTest > p {
+  display: inline-block;
+  background-color: aqua;
+  margin: 20px;
+  padding: 40px;
+}
+
+#headingId {
+  color: blueviolet;
+}
+
+.testCss {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+.class2 {
+  background-color: chartreuse;
+}
+.class1 {
+  background-color: aqua;
+}
+
+.bigBox {
+  width: 400px;
+  height: 400px;
+  border: solid 1px;
+  background-color: purple;
+  padding: 20px;
+}
+
+.box {
+  border: solid 1px;
+  padding: 20px 15px;
+  margin: 0 0 20px 0;
+  /* border-top-right-radius: 25px; */
+  /* border-radius: 25px;*/
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#test-cont {
+  width: 50%;
+  background-color: aquamarine;
+  color: red;
+  font-size: 1rem;
+}

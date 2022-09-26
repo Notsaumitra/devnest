@@ -1,0 +1,14 @@
+127.0.0.1 is the IP address of the local computer
+also known as loopback address
+we can also use localhost instead of 127.0.0.1
+
+
+>select all direct children
+
+.container > div > h2 {
+    element with class container(parent) then go to children div then select its children h2 (so only h2 is styled)
+}
+
+.container > div{
+    element with class container(parent) then select all divs so in that case all divs are styled since they are immediate children
+}

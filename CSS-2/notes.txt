@@ -1,0 +1,89 @@
+Cascading Style Sheet
+CSS means How a web page looks (style the webpage) while HTML is what a page has (content of page)
+
+Selector{
+ property:value;
+}
+
+External css in head tag add <link rel="stylesheet" href="./style/css"> (rel="stylesheet" is important otherwise it will not work)
+
+Priority will be inline>>internal and external
+Between internal and external whichever is written later is given more priority
+Can be multiple external files but priority will be given to the newest one (one which is defined at last)
+
+3 main selectors
+Element selector
+Id selector
+Class selector
+
+Id >> class >> element if one element is syled by 3 selectors
+If 2 same type of selectors are targeting 1 element the one defined later in stylesheet is given priority
+One element can have only 1 id
+
+rgb(0,0,0) black
+rgb(255,0,0) red
+rgb(0,255,0) green
+rgb(0,0,255) blue
+rgb(255,255,255) white
+rgba(0,0,0,0.5) rgb+alpha for transparency value bet 0 to 1
+
+
+Hex colors
+#000000 black
+#ffffff white
+#ff0000 red
+#00ff00 green
+#0000ff blue
+
+hsl(hue, saturation, lightness)
+hsla(hue, saturation,lightness, alpha)
+
+>> img tag
+in img tag when we dont specify any unit it means pixel
+
+*get photo urls
+https://picsum.photos/
+
+>> anchor tag
+attribute target="_blank" opens link in new tab
+
+## padding -- space between boundary/border and content
+padding : value; all sides
+padding : value1 value2; value1=top,bottom and value2 = right-left
+padding : value1 value2 value3 value4; value1=top value2=right value3=bottom value4=left trbl(trouble)
+
+## margin -- space from origin position
+for body there is some default margin
+margin : value; all sides
+margin : value1 value2; value1=top,bottom and value2 = right-left
+margin : value1 value2 value3 value4; value1=top value2=right value3=bottom value4=left trbl(trouble)
+
+border: type size color;
+border-radius: 50%; // circle but we must specify width and height 
+
+## em vs rem
+default font size is 16px;
+EM is relative to the parent element's font size,
+so if you wish to scale the element's size based on its parent's size, use EM. 
+REM is relative to the root (HTML) font size,
+so if you wish to scale the element's size based on the root size,
+no matter what the parent size is, use REM 
+*** for RWD rem is used
+
+
+if we give div some style say color:red
+its children lets say p tag will inherit the color
+eg font-size, color, etc.
+
+display property is automatically set to block,inline 
+block element takes 100% width eg.- div,p,h1,h2,h3,h4,h5,h6
+inline element takes only that much space which it needs eg.- a,span
+if we add margin at top bottom it has no effect but left right we can give....
+but if we add padding at all 4 sides top and bottom will overflow
+
+display: inline-block allows to set a width and height on the element.
+display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+
+inline-block we can set width and height on the element
+
